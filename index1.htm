@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="asset/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    <h1>Rock Scissors Paper</h1>
+    </div>
+
+    <div class="nav-1">
+        <button class="Deposit" id="deposit" onclick="btn();">Deposit</button>
+        <div class="balance" id="balance"></div>
+    </div>
+    <div class="items">
+    <button id="rock" onclick="Rock();"> <img src="rock.png" alt="image"></button>
+    <!-- <p>➡️</p> -->
+    <button id="scissors" onclick="Scissors();"><img src="scissor.png" alt="image"></button>
+    <!-- <p>➡️</p> -->
+    <button id="paper" onclick="Paper();"><img src="paper.png" alt="image" style="margin-top: -15px;"></button>
+    <!-- <p>🚫</p> -->
+    </div>
+
+    <div id="items2">
+        <p onclick="demo1();" style="padding-left: 250px; margin-top: -140px;" id="close">❌</p>
+        <label style="margin-top: 50px;">Enter Amount</label>
+        <input type="number" name="" id="user_deposit" placeholder="Tsh 0.0">
+        <button onclick="deposit();" class="btn">confirm</button>
+        
+    </div>
+
+    <div class="displays">
+        <h3>You</h3>
+        <div id="win"></div>
+        <div id="loose"></div>
+        <div id="draw"></div>
+        <h3>Computer</h3>
+        <div id="win1"></div>
+        <div id="loose1"></div>
+        <div id="draw1"></div>
+    </div>
+    <div id="error"></div>
+
+    <div id="picker"></div>
+
+    <div id="accept"></div>
+
+    <div class="guide" id="try">
+        <h2>Read carefull this guideline</h2>
+        <p onclick="demo();">❌</p>
+
+        <div class="note">
+            <h4>
+                Guidelines for Playing Rock, Scissors, Paper
+                <br><br>
+                Rock, Scissors, Paper is a simple and fun hand game often used to make decisions or just for
+                entertainment.
+                Follow these guidelines to understand how to play:
+                Objective of the Game
+                The goal is to choose a hand gesture (Rock, Scissors, or Paper) that defeats your opponent's
+                gesture
+                according to the rules.<br><br>
+                How to Play
+                <br><br>
+                1. Players:
+                 The game is played between You and Computer.
+                 <br><br>
+                2. Preparation:
+                 - Each player makes a fist with one hand.
+                 - The game begins with both players click, "Rock, scissors, paper, shoot!" or a similar
+                countdown.
+                <br><br>
+                3. Gestures:
+                 On "shoot," each player simultaneously shows one of three gestures with their hand:
+                 - Rock: A closed fist.
+                 - Scissors: Two fingers extended, mimicking the shape of scissors.
+                 - Paper: An open hand with fingers extended
+                 <br><br>
+            4. Winning Rules:
+            The outcome is determined as follows:
+            - Rock crushes Scissors: Rock wins.
+            - Scissors cut Paper: Scissors win.
+            - Paper covers Rock: Paper wins.
+            - Same Gesture: It's a tie; play again.
+            <br><br>
+                Example Scenarios
+                - Player 1 shows Rock, Player 2 shows Scissors -> Player 1 wins (Rock crushes Scissors).
+                - Player 1 shows Scissors, Player 2 shows Paper -> Player 1 wins (Scissors cut Paper).
+                - Player 1 shows Paper, Player 2 shows Paper -> Tie, replay the round.<br><br>
+                Tips for Fun Play
+                <br><br>
+                - Be quick with your gesture to keep the game exciting.
+                - Add a best-of-three or best-of-five format to determine the overall winner.
+                - Use the game to decide small disagreements or just for a quick, friendly competition!
+                Now you're ready to play!
+             </h4>
+        </div>
+    </div>
+
+
+    <button onclick="reset();" id="reset">Reset</button>
+    
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
